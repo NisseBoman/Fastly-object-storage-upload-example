@@ -1,0 +1,18 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["nisse@tnfgruppen.com"]
+cloned_from = "https://github.com/fastly/compute-starter-kit-rust-empty"
+description = "Uploader tool / demo / example to take PUT or POST requests and PUT them into Fastly object storage"
+language = "rust"
+manifest_version = 3
+name = "fos_uploader"
+service_id = ""
+
+[local_server]
+[local_server.backends]
+  [local_server.backends.storage]
+    url = "https://eu-central.object.fastlystorage.app"
+
+[scripts]
+  build = "PATH=/Users/nboman/.cargo/bin:$PATH RUSTC=/Users/nboman/.cargo/bin/rustc /Users/nboman/.cargo/bin/cargo build --profile release"
