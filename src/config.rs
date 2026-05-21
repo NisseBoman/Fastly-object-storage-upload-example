@@ -16,10 +16,10 @@ pub struct FosConfig {
 
 /// Default demo configuration — replace before production use.
 pub const FOS: FosConfig = FosConfig {
-    bucket: "tradera",
+    bucket: "<bucketname>",
     region: "eu-central",
-    access_key: "dHSWJ0DTVbyrjragXn0CP2",
-    secret_key: "2KUtyX32kkNYsDMT7wUCZJknUPANafOuhxWh4eYccWSSgKg9Zu6OvNk0TvSLhaCd6",
+    access_key: "<access_key>",
+    secret_key: "<secret_key>",
     backend: "storage",
 };
 
