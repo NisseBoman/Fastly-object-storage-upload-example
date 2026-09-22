@@ -15,4 +15,4 @@ service_id = ""
     url = "https://eu-central.object.fastlystorage.app"
 
 [scripts]
-  build = "cargo build --profile release"
+  build = "cargo build --release --target wasm32-wasip1"
