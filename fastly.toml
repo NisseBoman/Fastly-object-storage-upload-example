@@ -15,4 +15,4 @@ service_id = ""
     url = "https://eu-central.object.fastlystorage.app"
 
 [scripts]
-  build = "PATH=/Users/nboman/.cargo/bin:$PATH RUSTC=/Users/nboman/.cargo/bin/rustc /Users/nboman/.cargo/bin/cargo build --profile release"
+  build = "cargo build --profile release"
